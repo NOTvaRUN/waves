@@ -18,6 +18,9 @@ body {
 .front-wave-move {
   animation: endwave 8s forwards infinite alternate ease-in-out;
 }
+.lightning {
+  animation: light 0.5s ease-in 1 normal forwards;
+}
 @keyframes endwave {
   0% {
     transform: translate(0px, 0px);
@@ -30,5 +33,23 @@ body {
   }
   100% {
     transform: translate(0px, 0px);
+  }
+}
+
+@keyframes light {
+  0% {
+    fill: #252d3b;
+  }
+  25% {
+    fill: rgb(97 105 118);
+  }
+  50% {
+    fill: #252d3b;
+  }
+  75% {
+    fill: rgb(97 105 118);
+  }
+  100% {
+    fill: #252d3b;
   }
 }
